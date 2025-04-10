@@ -8,6 +8,8 @@ module "sg" {
     source = "./modules/sg"
     vpc_id = module.vpc.vpc_id
 }
+###calling eks 
+
 module "eks" {
   source                  = "./modules/eks"
   subnet_ids              = module.vpc.subnet_ids
